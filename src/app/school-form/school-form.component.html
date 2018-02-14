@@ -1,0 +1,40 @@
+
+<div class="card">
+  <div class="card-header">
+      Add New School Details
+  </div>
+  <div class="card-block">
+      <div class="container">
+          <form class="form-horizontal" (ngSubmit)="onSubmit()" #newSchoolForm="ngForm">    
+            <div class="row">     
+              <div class="col-sm-3">         
+                <div class="form-group">
+                  <label  for="schoolLabel">School Name</label>              
+                  <input type="text" class="form-control" id="schoolLabel" [(ngModel)]="model.schoolName" required #name="ngModel" name="schoolName">   
+                  <div *ngIf="name.errors && (name.touched)" class="alert alert-danger">
+                      <div *ngIf="name.errors.required" >
+                        School Name is required
+                      </div> 
+                  </div>                              
+                </div>
+              </div>    
+              <div class="col-sm-3">         
+                  <div class="form-group">
+                    <label  for="webSiteLabel">Web Site</label>              
+                    <input type="text" class="form-control" id="webSiteLabel" [(ngModel)]="model.webSite" required #webSite="ngModel" name="webSite">    
+                    <div *ngIf="webSite.errors && (webSite.touched)" class="alert alert-danger">
+                        <div *ngIf="webSite.errors.required" >
+                          WebSite is required
+                        </div> 
+                    </div>                          
+                  </div>
+                </div>         
+            </div>
+            <button type="submit" class="btn btn-success" [disabled]="!newSchoolForm.form.valid">Submit</button>
+          </form>
+      </div>
+      <div>
+          <h2>Model:</h2>
+          {{ currentBook }}
+      </div>
+</div>

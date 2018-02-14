@@ -1,0 +1,153 @@
+{
+    "description": "Code.org schools database",
+    "generated": "2014-07-07 05:00:18 +0000",
+    "license": "The Code.org JSON API and database of schools is licensed via the Creative Commons attribution license, which means you are free to use the data to make derivative works, as long as you give Code.org attribution.",
+    "schools": [
+        {
+            "name": "J.K. Mullen High School",
+            "website": "http://www.mullenhigh.com",
+            "levels": [
+                "High School"
+            ],
+            "format": "In School",
+            "format_description": "Daily programming course",
+            "gender": "Both",
+            "description": "Introduction to Java Programming",
+            "languages": [
+                "Alice",
+                "Java"
+            ],
+            "money_needed": true,
+            "online_only": false,
+            "number_of_students": null,
+            "contact_name": "Mullen High School",
+            "contact_number": "3037611764",
+            "contact_email": "mcguire@mullenhigh.com",
+            "latitude": 39.6515,
+            "longitude": -105.035,
+            "street": "3602 S. Lowell Blvd",
+            "city": "Denver",
+            "state": "CO",
+            "zip": "50236",
+            "published": 1,
+            "updated_at": "2013-02-26T13:31:23Z",
+            "country": "United States",
+            "source": "user"
+        },
+        {
+            "name": "Lynn Classical High School",
+            "website": "http://www.lynnclassical.org",
+            "levels": [
+                "High School"
+            ],
+            "format": "In School",
+            "format_description": "Daily programming course",
+            "gender": "Both",
+            "description": "Honors Level Computer Programming with Java and C++",
+            "languages": [
+                "C++",
+                "Java"
+            ],
+            "money_needed": false,
+            "online_only": false,
+            "number_of_students": null,
+            "contact_name": "Stephen Brass",
+            "contact_number": "781-477-7404",
+            "contact_email": "brasss@lynnschools.org",
+            "latitude": 42.4656,
+            "longitude": -70.9848,
+            "street": "235 O'Callaghan Way",
+            "city": "Lynn",
+            "state": "MA",
+            "zip": "01905",
+            "published": 1,
+            "updated_at": "2013-02-26T13:31:27Z",
+            "country": "United States",
+            "source": "user"
+        },
+        {
+            "name": "South Anchorage HS",
+            "website": "http://www.asdk12.org/schools/south/pages/",
+            "levels": [
+                "High School"
+            ],
+            "format": "In School",
+            "format_description": "Daily programming class",
+            "gender": "Both",
+            "description": "",
+            "languages": [],
+            "money_needed": false,
+            "online_only": false,
+            "number_of_students": null,
+            "contact_name": "",
+            "contact_number": "907-742-6200",
+            "contact_email": "",
+            "latitude": 61.1,
+            "longitude": -149.804,
+            "street": "13400 Elmore Rd",
+            "city": "Anchorage",
+            "state": "AK",
+            "zip": "99516",
+            "published": 1,
+            "updated_at": "2013-01-18T21:07:53Z",
+            "country": "United States",
+            "source": "user"
+        },
+        {
+            "name": "Wasilla High School",
+            "website": "http://www.matsuk12.us/Domain/3108",
+            "levels": [
+                "High School"
+            ],
+            "format": "In School",
+            "format_description": "Daily programming class",
+            "gender": "Both",
+            "description": null,
+            "languages": [],
+            "money_needed": false,
+            "online_only": false,
+            "number_of_students": null,
+            "contact_name": null,
+            "contact_number": "907-352-8200",
+            "contact_email": null,
+            "latitude": 61.5868,
+            "longitude": -149.432,
+            "street": "701 E Bogard Rd",
+            "city": "Wasilla",
+            "state": "AK",
+            "zip": "99654",
+            "published": 1,
+            "updated_at": "2013-01-11T01:59:08Z",
+            "country": "United States",
+            "source": "csta"
+        },
+        {
+            "name": "Alabama School of Fine Arts",
+            "website": "http://www.asfa.k12.al.us/",
+            "levels": [
+                "High School"
+            ],
+            "format": "In School",
+            "format_description": "Daily programming class",
+            "gender": "Both",
+            "description": null,
+            "languages": [],
+            "money_needed": true,
+            "online_only": false,
+            "number_of_students": null,
+            "contact_name": null,
+            "contact_number": "205-252-9241",
+            "contact_email": null,
+            "latitude": 33.5204,
+            "longitude": -86.8133,
+            "street": "1800 Rev Abraham Woods Jr Blvd",
+            "city": "Birmingham",
+            "state": "AL",
+            "zip": "35203",
+            "published": 1,
+            "updated_at": "2013-01-11T01:59:08Z",
+            "country": "United States",
+            "source": "csta"
+        }
+    ]
+}
