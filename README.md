@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
+The application covers following topics:
+
+Angular 5 concepts such as routing, component interaction, services using Dependency Injection and data-binding
+Creating REST API using Node JS and Express JS
+Mongoose.js for connecting and performing CRUD operations in MongoDB
+Authentication and Authorization
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
