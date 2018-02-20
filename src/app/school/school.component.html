@@ -1,0 +1,32 @@
+<div class="card w-75">
+    <div class="card">
+        <div class="card-header">
+          <h1>Schools List
+            <a routerLink="/addSchool"  class="btn btn-default btn-lg">
+             Add School
+            </a>
+          </h1>
+        </div>
+        <div class="card-block">
+          <div class="container">    
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Website</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let school of schools" >
+                  <td >{{ school.schoolName }}</td>
+                  <td >{{ school.webSite }}</td>
+                  <td> <button type="button" class="btn btn-primary start" (click)="showDetails(school)" title="Show Details">Show Details </button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+</div>
+

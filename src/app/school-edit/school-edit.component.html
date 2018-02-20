@@ -1,0 +1,107 @@
+<div class="card">
+    <div class="card-header">
+        Edit School Details
+    </div>
+    <div class="card-block">
+        <div class="container">
+            <form class="form-horizontal" (ngSubmit)="onUpdate()" #editSchoolForm="ngForm">    
+              <div class="row">     
+                <div class="col-sm-3">         
+                  <div class="form-group">
+                    <label  for="schoolLabel">School Name</label>              
+                    <input type="text" class="form-control" id="schoolLabel" [(ngModel)]="model.schoolName" required #name="ngModel" name="schoolName">   
+                    <div *ngIf="name.errors && (name.touched)" class="alert alert-danger">
+                        <div *ngIf="name.errors.required" >
+                          School Name is required
+                        </div> 
+                    </div>                              
+                  </div>
+                </div>    
+                <div class="col-sm-3">         
+                    <div class="form-group">
+                      <label  for="webSiteLabel">Web Site</label>              
+                      <input type="text" class="form-control" id="webSiteLabel" [(ngModel)]="model.webSite" required #webSite="ngModel" name="webSite">    
+                      <div *ngIf="webSite.errors && (webSite.touched)" class="alert alert-danger">
+                          <div *ngIf="webSite.errors.required" >
+                            WebSite is required
+                          </div> 
+                      </div>                          
+                    </div>
+                </div>     
+                <div class="col-sm-3">         
+                  <div class="form-group">
+                    <label  for="genderLabel">Gender</label>              
+                    <input type="text" class="form-control" id="genderLabel" [(ngModel)]="model.gender" required #gender="ngModel" name="gender">    
+                    <div *ngIf="gender.errors && (gender.touched)" class="alert alert-danger">
+                        <div *ngIf="gender.errors.required" >
+                          Gender is required
+                        </div> 
+                    </div>                          
+                  </div>
+                </div>    
+                <div class="col-sm-3">         
+                  <div class="form-group">
+                    <label  for="genderLabel">Format</label>              
+                    <input type="text" class="form-control" id="formatLabel" [(ngModel)]="model.format" required #format="ngModel" name="format">    
+                    <div *ngIf="format.errors && (format.touched)" class="alert alert-danger">
+                        <div *ngIf="format.errors.required" >
+                          Format is required
+                        </div> 
+                    </div>                          
+                  </div>
+                </div>      
+              </div>
+              <div class="row">     
+                <div class="col-sm-3">         
+                  <div class="form-group">
+                    <label  for="contactNameLabel">Contact Name</label>              
+                    <input type="text" class="form-control" id="contactName" [(ngModel)]="model.contactName" required #contactName="ngModel" name="contactName">   
+                    <div *ngIf="contactName.errors && (contactName.touched)" class="alert alert-danger">
+                        <div *ngIf="contactName.errors.required" >
+                          Contact Name is required
+                        </div> 
+                    </div>                              
+                  </div>
+                </div>    
+                <div class="col-sm-3">         
+                    <div class="form-group">
+                      <label  for="contactNumberLabel">Contact No (format: xxxx-xxx-xxxx)</label>              
+                      <input type="text" class="form-control" id="contactNumberLabel" [(ngModel)]="model.contactNumber" required #contactNumber="ngModel" name="contactNumber">    
+                      <div *ngIf="contactNumber.errors && (contactNumber.touched)" class="alert alert-danger">
+                          <div *ngIf="contactNumber.errors.required" >
+                            Contact No is required
+                          </div> 
+                           
+                      </div>                          
+                    </div>
+                </div>     
+                <div class="col-sm-3">         
+                  <div class="form-group">
+                    <label  for="emailLabel">Email</label>              
+                    <input type="email" class="form-control" id="emailLabel" [(ngModel)]="model.email" required #email="ngModel" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">    
+                    <div *ngIf="email.errors && (email.touched)" class="alert alert-danger">
+                        <div *ngIf="email.errors.required" >
+                          Email is required
+                        </div> 
+                        <div *ngIf="email.errors.pattern"> 
+                          Email not valid.
+                       </div>	
+                    </div>                          
+                  </div>
+                </div>    
+                <div class="col-sm-3">         
+                  <div class="form-group">
+                    <label  for="countryLabel">Country</label>              
+                    <input type="text" class="form-control" id="countryLabel" [(ngModel)]="model.country" required #country="ngModel" name="country">    
+                    <div *ngIf="country.errors && (country.touched)" class="alert alert-danger">
+                        <div *ngIf="country.errors.required" >
+                          Country is required
+                        </div>                       
+                    </div>                          
+                  </div>
+                </div>     
+              </div>
+             <button type="submit" class="btn btn-success" [disabled]="!editSchoolForm.form.valid">Update</button>
+            </form>
+          </div>          
+  </div>
