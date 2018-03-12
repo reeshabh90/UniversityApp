@@ -4,7 +4,7 @@ export class SchoolDetails {
     public gender: string;
     public format: string;
     public contactName: string;
-    public contactNumber: number;
+    public contactNo: number;
     public email: string;
     public country: string;
 
@@ -15,7 +15,7 @@ export class SchoolDetails {
         this.gender = gender;
         this.format = format;
         this.contactName = contactName;
-        this.contactNumber = contactNo;
+        this.contactNo = contactNo;
         this.email = email;
         this.country = country;
 

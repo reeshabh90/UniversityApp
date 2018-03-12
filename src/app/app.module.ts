@@ -10,6 +10,12 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { SchoolComponent } from './school/school.component';
 import { SchoolDetailComponent } from './school-detail/school-detail.component';
 import { SchoolEditComponent } from './school-edit/school-edit.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './home/home.component';
+import { AuthenticationService } from './services/authentication.service';
+import { AuthGuardService } from './services/auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +23,11 @@ import { SchoolEditComponent } from './school-edit/school-edit.component';
     SchoolFormComponent,
     SchoolComponent,
     SchoolDetailComponent,
-    SchoolEditComponent
+    SchoolEditComponent,
+    RegisterComponent,
+    LoginComponent,
+    ProfileComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +37,7 @@ import { SchoolEditComponent } from './school-edit/school-edit.component';
     HttpModule,
     HttpClientModule
   ],
-  providers: [SchoolDataService],
+  providers: [SchoolDataService, AuthenticationService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

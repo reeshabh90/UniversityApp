@@ -65,10 +65,10 @@
                 </div>    
                 <div class="col-sm-3">         
                     <div class="form-group">
-                      <label  for="contactNumberLabel">Contact No (format: xxxx-xxx-xxxx)</label>              
-                      <input type="text" class="form-control" id="contactNumberLabel" [(ngModel)]="model.contactNumber" required #contactNumber="ngModel" name="contactNumber">    
-                      <div *ngIf="contactNumber.errors && (contactNumber.touched)" class="alert alert-danger">
-                          <div *ngIf="contactNumber.errors.required" >
+                      <label  for="contactNoLabel">Contact No (format: xxxx-xxx-xxxx)</label>              
+                      <input type="text" class="form-control" id="contactNoLabel" [(ngModel)]="model.contactNo" required #contactNo="ngModel" name="contactNo">    
+                      <div *ngIf="contactNo.errors && (contactNo.touched)" class="alert alert-danger">
+                          <div *ngIf="contactNo.errors.required" >
                             Contact No is required
                           </div> 
                            
