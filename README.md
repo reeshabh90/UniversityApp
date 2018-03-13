@@ -11,7 +11,7 @@ Authentication and Authorization
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run build`. Navigate to `http://localhost:3000/`. The server will be running and you can log in to the UI
 
 ## Code scaffolding
 
