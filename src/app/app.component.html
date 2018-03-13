@@ -1,14 +1,12 @@
-<!-- The content below is only a placeholder and can be replaced.
+
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}!
+    <label class="logoutLblPos">
+      <button  *ngIf="auth.isLoggedIn()" type="button" class="btn btn-link" (click)="auth.logout()">Log Out</button>
+    </label>
   </h1>
-  <app-school-form></app-school-form>
-</div> -->
 
-
-<h1>
-  {{title}}
-</h1>
+</div>
 
 <router-outlet></router-outlet>

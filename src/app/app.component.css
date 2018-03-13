@@ -1,3 +1,9 @@
 h1{
     text-align:center;
 }
+.logoutLblPos{
+
+    position:fixed;
+    right:10px;
+    top:5px;
+ }

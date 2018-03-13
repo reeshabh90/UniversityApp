@@ -11,27 +11,34 @@ import { AuthGuardService } from '../services/auth-guard.service';
 import { HomeComponent } from '../home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   {
     path: 'home',
     component: HomeComponent,
     data: { title: 'Home' }
   },
-  { path: 'addSchool', component: SchoolFormComponent },
+  {
+    path: 'addSchool',
+    component: SchoolFormComponent,
+    canActivate: [AuthGuardService]
+  },
   {
     path: 'schools',
     component: SchoolComponent,
-    data: { title: 'School List' }
+    data: { title: 'School List' },
+    canActivate: [AuthGuardService]
   },
   {
     path: 'school-details/:id',
     component: SchoolDetailComponent,
-    data: { title: 'School Details' }
+    data: { title: 'School Details' },
+    canActivate: [AuthGuardService]
   },
   {
     path: 'school-edit/:id',
     component: SchoolEditComponent,
-    data: { title: 'School Edit' }
+    data: { title: 'School Edit' },
+    canActivate: [AuthGuardService]
   },
   {
     path: 'login',
@@ -50,6 +57,7 @@ const routes: Routes = [
     canActivate: [AuthGuardService]
   },
   { path: '**', redirectTo: '/404' },
+
 
 ];
 
